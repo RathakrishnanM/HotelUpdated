@@ -1,0 +1,21 @@
+/* CenteredParagraph.css */
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Adjust as needed for the desired height */
+  }
+  
+  p {
+    /* text-align: center; */
+    font-size: 18px;
+    color: #333;
+    /* Add more styles as needed for your specific design */
+  }
+  h1.highlight{
+    color:#6d2480;
+    text-align: center;
+  }
+
+  

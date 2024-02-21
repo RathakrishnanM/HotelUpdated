@@ -1,0 +1,365 @@
+.gallery h1 {
+  font-weight: bold;
+}
+.gallery {
+  margin-bottom: 50px;
+}
+.gallery img {
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+}
+.gallery .items {
+  padding: 15px;
+  border: 1px solid #301934;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #ded8ef;
+}
+.gallery h3 {
+  margin: 10px 0 10px 0;
+  font-weight: 400;
+}
+.gallery .img {
+  position: relative;
+  overflow: hidden;
+  width: 380px;
+  height: 252px;
+}
+
+.gallery i {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  z-index: 5;
+  font-size: 40px;
+  color:white;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.gallery .img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 252px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.gallery .img::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 360px;
+  height: 232px;
+  z-index: 3;
+  border: 1px solid #6d2480;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery .items:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.gallery .items:hover i,
+.gallery .items:hover .img::after,
+.gallery .items:hover .img::before {
+  opacity: 1;
+  cursor: pointer;
+}
+.popup {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 8;
+}
+
+.hide {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.popup-content {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+.popup button {
+  background-color: #fff;
+  padding: 20px 20px;
+  color: #000;
+  position: absolute;
+  top: -7%;
+  right: -34.5%;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .gallery .container {
+    max-width: 100%;
+    background-color: #000;
+  }
+  .gallery .img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .gallery .img::after {
+    width: 300px;
+    height: 180px;
+  }
+  .popup-content {
+    padding: 50px;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+  }
+  .popup button {
+    background-color: #fff;
+    padding: 20px 20px;
+    color: #000;
+    position: absolute;
+    top: -2%;
+    right: 6.5%;
+    font-weight: bold;
+  }
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  width: 100%;
+  max-height: 300px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain image aspect ratio */
+}
+
+.img i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.title {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content img {
+  width: 100%;
+  max-height: 80vh; /* Set a maximum height for the popup image */
+  object-fit: contain; /* Maintain image aspect ratio */
+}
+/* Add this CSS to your existing styles */
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  width: 100%;
+  max-height: 300px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain image aspect ratio */
+}
+
+.img i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.title {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content img {
+  width: 100%;
+  max-height: 80vh; /* Set a maximum height for the popup image */
+  object-fit: contain; /* Maintain image aspect ratio */
+}
+
+/* Add this rule to ensure each item appears in its own box */
+.grid .items {
+  flex-basis: 100%; /* Each item takes up 100% of the available width */
+}
+
+/* Adjust other styles as needed */
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  width: 100%;
+  max-height: 300px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain image aspect ratio */
+}
+
+.img i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.title {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content img {
+  width: 100%;
+  max-height: 80vh; /* Set a maximum height for the popup image */
+  object-fit: contain; /* Maintain image aspect ratio */
+}
+
+/* Ensure each item appears in its own row in the grid */
+.grid .items {
+  flex-basis: 100%;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Adjust margin as needed */
+  flex-basis: 100%; /* Each item takes up the full width initially */
+  flex-grow: 1; /* Allow items to grow to fill the width */
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  width: 150%;
+  max-height: 500px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain image aspect ratio */
+}
+
+.img i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.title {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content img {
+  width: 100%;
+  max-height: 80vh; /* Set a maximum height for the popup image */
+  object-fit: contain; /* Maintain image aspect ratio */
+}
+
+
+/* .gallery-slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallery-slider .slick-prev,
+.gallery-slider .slick-next {
+  font-size: 24px;
+  color: #6d2480;
+}
+
+.gallery-slider .slick-dots {
+  bottom: -30px;
+}
+
+.gallery-slider .slick-dots li {
+  margin: 0 4px;
+}
+
+.gallery-slider .slick-dots li button {
+  font-size: 16px;
+  color: #6d2480;
+}
+
+
+.gallery-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.gallery-slider .items {
+  margin: 0 10px;
+}
+
+.gallery-slider .popup-content {
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.gallery-slider .popup button {
+  background-color: #fff;
+  padding: 20px;
+  color: #000;
+  position: absolute;
+  top: -7%;
+  right: -30%;
+  font-weight: bold;
+} */
